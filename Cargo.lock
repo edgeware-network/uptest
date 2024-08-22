@@ -2104,7 +2104,7 @@ dependencies = [
  "serde_json",
  "subxt",
  "subxt-macro",
- "subxt-metadata",
+ "subxt-metadata 0.32.1",
  "subxt-signer",
  "tar",
  "tokio",
@@ -4112,7 +4112,7 @@ dependencies = [
  "sp-core-hashing 9.0.0",
  "subxt-lightclient",
  "subxt-macro",
- "subxt-metadata",
+ "subxt-metadata 0.30.1",
  "thiserror",
  "tracing",
 ]
@@ -4131,7 +4131,7 @@ dependencies = [
  "proc-macro2",
  "quote",
  "scale-info 2.9.0",
- "subxt-metadata",
+ "subxt-metadata 0.30.1",
  "syn 2.0.28",
  "thiserror",
  "tokio",
@@ -4171,6 +4171,19 @@ name = "subxt-metadata"
 version = "0.30.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0283bd02163913fbd0a5153d0b179533e48b239b953fa4e43baa27c73f18861c"
+dependencies = [
+ "frame-metadata 16.0.0",
+ "parity-scale-codec 3.6.4",
+ "scale-info 2.9.0",
+ "sp-core-hashing 9.0.0",
+ "thiserror",
+]
+
+[[package]]
+name = "subxt-metadata"
+version = "0.32.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b6898275765d36a37e5ef564358e0341cf41b5f3a91683d7d8b859381b65ac8a"
 dependencies = [
  "frame-metadata 16.0.0",
  "parity-scale-codec 3.6.4",
@@ -4267,9 +4280,9 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
-version = "1.0.44"
+version = "1.0.55"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "611040a08a0439f8248d1990b111c95baa9c704c805fa1f62104b39655fd7f90"
+checksum = "6e3de26b0965292219b4287ff031fcba86837900fe9cd2b34ea8ad893c0953d2"
 dependencies = [
  "thiserror-impl",
 ]
@@ -4296,9 +4309,9 @@ dependencies = [
 
 [[package]]
 name = "thiserror-impl"
-version = "1.0.44"
+version = "1.0.55"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "090198534930841fab3a5d1bb637cde49e339654e606195f8d9c76eeb081dc96"
+checksum = "268026685b2be38d7103e9e507c938a1fcb3d7e6eb15e87870b617bf37b6d581"
 dependencies = [
  "proc-macro2",
  "quote",
